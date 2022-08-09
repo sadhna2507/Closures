@@ -17,17 +17,54 @@
 
 
 
+// function counter(){
+//     var count = 1;
+//     count++;
+//     console.log(count);
+
+// }
+// console.log(counter);
+// counter();// output = 2
+// counter();// output = 2
+// counter();// output = 2
+// counter();// output = 2
+
+// everytime it will give 2 as output
+
+
+var count = 1;
+
 function counter(){
-    var count = 1;
     count++;
     console.log(count);
 
 }
 // console.log(counter);
-counter();// output = 2
-counter();// output = 2
-counter();// output = 2
-counter();// output = 2
+counter(); // output =2
+counter(); // output =3
+counter(); // output =4
+counter(); // output =5
+console.log(count);  // output =5 
 
-// everytime it will give 2 as output
 
+
+
+var count = 1;
+
+function counter(){
+    var age = 20;
+    function check(){
+        console.log("inside check", age)
+    }
+    check();
+    count++;
+    console.log(count);
+
+}
+// console.log(counter);
+// counter(); // output =2
+// counter(); // output =3
+// counter(); // output =4
+// counter(); // output =5
+// console.log(age);
+// console.log(count);  // output =5 
