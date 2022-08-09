@@ -68,13 +68,29 @@
 // // console.log(count);  // output =5
 
 
+// function createCounter(){
+//     let count = 1;
+
+//     function counterIncrement(){
+//         count++;
+//         return count;
+//     }
+//     return counterIncrement;
+// }
+// let counter = createCounter();
+// console.log(counter());
+
+// OR 
+
 function createCounter(){
     let count = 1;
 
-    function counterIncrement(){
-        count++;
-        return count;
-    }
+    
     return counterIncrement;
 }
-console.log(createCounter)
+let counter = function counterIncrement(){
+    count++;
+    return count;
+}
+console.log(counter());
+
